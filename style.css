@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("tic-tac-toe\ image.jpg"); 
+}
+
+h1 {
+    text-align: center;
+    color:white; 
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    text-align: center; 
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.game {
+    height: 60vh; 
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    height: 18vh;
+    width: 18vh;
+    background-color: #f1efe8;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    font-size: 10vh;
+    color:black;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.reset-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.reset-btn:hover {
+    background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: 100vh;
+    }
+
+    .game {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .box {
+        height: 20vw;
+        width: 20vw;
+    }
+}
+
+.reset-btn{
+        background-color: #004d40; 
+}
+@media (max-width: 768px) {
+    .container {
+        height: 100vh;
+    }
+    
+    .game {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .box {
+       height: 20vw;
+       width: 20vw;
+    }
+}
+
+.new-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.msg-container{
+        text-align: center;
+}
+#msg{
+    color:white;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.hide{
+    display:none;
+}
